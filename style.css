@@ -1,0 +1,101 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Fondamento', cursive;
+}
+
+.navbar{
+    background-color: #a29bfe;
+} 
+.row{
+    margin-left: 0!important;
+    margin-right: 0!important;
+
+}
+.nav_style a{
+    color: white;
+}
+.main_header{
+    height: 350px;
+    width: 100%;
+}
+
+.corona_rot img{
+    animation:gocorona 3s linear infinite
+}
+@keyframes gocorona{
+    0%{transform: rotate(0);}
+    100%{transform: rotate(360deg);}
+}
+.ani img{
+    border-radius: 160px;
+    animation: heartbeat 5s linear infinite;
+}
+@keyframes heartbeat{
+    0%{transform: scale(.75)};
+    20%{transform: scale(1)};
+    40%{transform: scale(.75)};
+    60%{transform: scale(1)};
+    80%{transform: scale(.75)};
+    100%{transform: scale(.75)};
+}
+.data div h1,p{
+    font-family: 'Fondamento', cursive;
+font-family: 'Roboto Condensed', sans-serif;
+}
+.covid{
+    margin: 0 0 30px 0;
+    color: red;
+}
+.sub_section{
+    background-color: #b09fd1;
+}
+footer div p{
+    padding: 0!important;
+    
+    background-color: red;
+    margin-bottom: 0!important;
+}
+html{
+    scroll-behavior: smooth;
+}
+#myBtn{
+    display: none;
+    position: fixed;
+    bottom: 30px;
+    right: 40px;
+    z-index: 99;
+    border: none;
+    outline: none;
+    background-color: #00A8FF;
+    color: white;
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 10px;
+}
+#myBtn:hover{
+    background-color: #606060;
+}
+
+.icon{
+    background-color: black;
+}
+@media screen and (max-width:768px){
+    .main_header{height:700px;text-align: center;}
+    .main_header h1{
+        text-align: center;
+        padding: 0;
+        width: 100%;
+        font-size: 30px;
+    }
+    .count_style{
+        display: inline!important;
+        text-align: center;
+    }
+    .count_style p{
+        text-align: center;
+    }
+
+}
+
